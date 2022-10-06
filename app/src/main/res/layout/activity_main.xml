@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    android:paddingHorizontal="@android:dimen/system_app_widget_background_radius"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -40,5 +41,24 @@
         android:ems="10"
         android:inputType="textPassword"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_register"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_register" />
+
+        <ImageButton
+            android:id="@+id/bt_login"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_login" />
+    </LinearLayout>
 
 </LinearLayout>
