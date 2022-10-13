@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    public fun actualiza(user: FirebaseUser) {
+    fun actualiza(user: FirebaseUser) {
         if (user != null) {
             val intent = Intent(this, Principal::class.java)
             startActivity(intent)
