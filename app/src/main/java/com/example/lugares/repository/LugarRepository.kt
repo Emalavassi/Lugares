@@ -1,7 +1,6 @@
 package com.example.lugares.repository
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.liveData
 import com.example.lugares.data.LugarDao
 import com.example.lugares.model.Lugar
 
